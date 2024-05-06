@@ -58,7 +58,6 @@ return {
 ```
 
 > [!note]
->
 > See default configuration.
 
 ## Default configuration

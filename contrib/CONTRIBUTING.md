@@ -29,20 +29,23 @@ This project uses [selene](https://github.com/Kampfkarren/selene) as the linter,
      using `git switch -c <branch-name>`.
 
    - **Make your changes**: Implement your changes on your local machine. Make sure
-   to follow the project standards (linting and formatting rules).
+     to follow the project standards (linting and formatting rules).
+
+   > [!note]
+   > You can use `make lint` and `make test` to check if your changes are correct
 
 3. **Send your changes**
 
    - **Commit your changes**: Once you are satisfied with your changes, commit them
-   with a descriptive and concise message. Following the standards is recommended,
-   [conventional commit messages](https://www.conventionalcommits.org/en/v1.0.0).
+     with a descriptive and concise message. Following the standards is recommended,
+     [conventional commit messages](https://www.conventionalcommits.org/en/v1.0.0).
 
    - **Push to your fork**: Push your changes to your fork using
-   `git push origin <branch-name>`.
+     `git push origin <branch-name>`.
 
    - **Create a Pull Request (PR)**: Once you pushed your changes, make a pull request
-   so we can see the changes and discuss over it if necessary. A clear description
-   of the changes is allways welcomed.
+     so we can see the changes and discuss over it if necessary. A clear description
+     of the changes is allways welcomed.
 
 ## Good practices
 
