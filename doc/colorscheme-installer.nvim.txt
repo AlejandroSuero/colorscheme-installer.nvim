@@ -1,0 +1,34 @@
+================================================================================
+                                                  *colorscheme-installer.nvim*
+
+This plugin allows you to search for a colorscheme and install it. It will
+create a default configuration for each installed colorscheme.
+
+Getting started:
+  1. Put a `require("colorscheme-installer").setup()` call somewhere in your
+  neovim config.
+  2. Read |colorscheme-installer.setup| to check the default configuration
+
+                                               *colorscheme-installer.setup()*
+colorscheme-installer.setup({opts})
+    Setup function to be run by user. Configures the {opts} for
+    |colorscheme-installer.nvim|.
+
+    Parameters: ~
+      {opts} (table) The options for the plugin. Defaults bellow.
+        >
+        local default_opts = {
+         colorschemes_path = os.getenv("HOME") ..
+         "/.config/nvim/lua/colorschemes",
+        }
+<
+
+    Usage:
+    >
+    require('colorscheme-installer').setup({
+      -- path where the colorschemes will be configured
+      colorschemes_path = os.getenv("HOME") .. "/.config/nvim/lua/colorschemes",
+    })
+<
+
+ vim:tw=78:ts=8:ft=help:norl:
