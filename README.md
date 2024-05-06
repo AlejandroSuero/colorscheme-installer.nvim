@@ -2,10 +2,20 @@
 
 <div align="center">
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
+<a href="https://github.com/AlejandroSuero/colorscheme-installer/actions/workflows/default.yml">
+    <img
+        alt="CI status badge"
+        align="center"
+        src="https://github.com/AlejandroSuero/colorscheme-installer/actions/workflows/default.yml/badge.svg"
+    />
+</a>
+<a href="https://github.com/AlejanroSuero/colorscheme-installer/issues">
+    <img
+        align="center" src="https://img.shields.io/github/issues/alejandrosuero/colorscheme-installer"
+        alt="issues badge"
+        title="Issues"
+    />
+</a>
 
 # NeoVim colorscheme installer
 
