@@ -1,5 +1,8 @@
 require("plenary.reload").reload_module("colorscheme-installer", true)
+
+local assert = require("luassert")
 local csi = require("colorscheme-installer")
+
 local eq = assert.are.same
 
 describe("setup", function()
