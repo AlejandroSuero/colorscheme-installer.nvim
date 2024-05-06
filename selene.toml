@@ -1,1 +1,3 @@
 std="vim"
+
+exclude = ["lua/colorscheme-installer/colorschemes/configs/*"]
