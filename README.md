@@ -38,7 +38,9 @@ This plugin supports [lazy.nvim](https://github.com/folke/lazy.nvim) installatio
 ```lua
 return {
     "AlejandroSuero/colorscheme-installer.nvim",
-    config = true
+    config = function()
+        require("colorscheme-installer").setup()
+    end,
 }
 ```
 
