@@ -41,8 +41,7 @@ installation.
 <
 
 
-  [!note]
-  See default configuration.
+  [!note] See default configuration.
 
 DEFAULT CONFIGURATION       *colorscheme-installer.nvim-default-configuration*
 
