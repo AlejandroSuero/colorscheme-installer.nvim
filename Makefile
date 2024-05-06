@@ -11,4 +11,5 @@ test:
 		-c "PlenaryBustedDirectory ${TESTS_DIR} { minimal_init = '${TESTS_INIT}' }"
 
 lint:
-	selene lua/colorscheme-installer
+	@selene lua/colorscheme-installer tests
+	@stylua --color always --check lua/colorscheme-installer tests
