@@ -87,4 +87,4 @@ Any contribution is welcomed!
 6. Push to your fork (`git push origin <branch-name>`).
 7. Open a [PR](https://github.com/AlejandroSuero/colorscheme-installer.nvim/pulls).
 
-For more information, check [CONTRIBUTING.md](https://github.com/AlejandroSuero/colorscheme-installer.nvim/blob/main/CONTRIBUTING.md)
+For more information, check [CONTRIBUTING.md](https://github.com/AlejandroSuero/colorscheme-installer.nvim/blob/main/contrib/CONTRIBUTING.md)
