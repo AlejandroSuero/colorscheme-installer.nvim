@@ -27,6 +27,47 @@ itself.
 
 </div>
 
+---
+
+## Installation
+
+This plugin supports [lazy.nvim](https://github.com/folke/lazy.nvim) installation.
+
+- Default installation:
+
+```lua
+return {
+    "AlejandroSuero/colorscheme-installer.nvim",
+    config = true
+}
+```
+
+- Customizable installation:
+
+```lua
+return {
+    "AlejandroSuero/colorscheme-installer.nvim",
+    config = function()
+        require("colorscheme-installer.nvim").setup({
+            -- your configuration goes here
+        })
+    end,
+}
+```
+
+> [!note]
+>
+> See default configuration.
+
+## Default configuration
+
+```lua
+local opts = {
+    -- path where the colorschemes will be configured
+    colorschemes_path = os.getenv("HOME") .. "/.config/nvim/lua/colorschemes"
+}
+```
+
 ## Contributing
 
 Thank you to everyone that is contributing and to those who want to contribute.
