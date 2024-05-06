@@ -25,7 +25,7 @@ jobs:
           # Github secret token
           token: ${{ secrets.GITHUB_TOKEN }}
           # selene arguments
-          args: --display-style=quiet lua/colorscheme-installer tests
+          args: --display-style=quiet --config=selene.toml lua/colorscheme-installer tests
           # selene version
           version: 0.12.1
 
