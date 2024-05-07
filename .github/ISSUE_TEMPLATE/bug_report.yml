@@ -43,6 +43,34 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: operative-system
+    attributes:
+      label: Operative system
+      description: OS in which the issue occurs
+      multiple: true
+      options:
+        - Windows
+        - MacOS
+        - Linux
+        - Android
+        - All systems
+    validations:
+      required: true
+
+  - type: textarea
+    id: os-version
+    attributes:
+      label: OS version
+      description: OS version in which the issue occurs
+      placeholder: |
+        MacOS 14.4.1
+        Windows 11
+        Ubuntu 22.04
+        ...
+    validations:
+      required: true
+
   - type: textarea
     id: issue-behaviour
     attributes:

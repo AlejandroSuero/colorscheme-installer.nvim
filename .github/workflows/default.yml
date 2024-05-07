@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        nvim-versions: ['stable', 'nightly']
+        nvim-versions: ["stable", "nightly"]
     name: test
     steps:
       - name: checkout
