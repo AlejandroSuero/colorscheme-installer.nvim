@@ -1,4 +1,4 @@
-*colorscheme-installer.nvim.txt*  For Neovim >= 0.8.0 Last change: 2024 May 06
+*colorscheme-installer.nvim.txt*  For Neovim >= 0.8.0 Last change: 2024 May 07
 
 ==============================================================================
 Table of Contents               *colorscheme-installer.nvim-table-of-contents*
