@@ -7,8 +7,6 @@ Table of Contents               *colorscheme-installer.nvim-table-of-contents*
   - Default configuration   |colorscheme-installer.nvim-default-configuration|
   - Contributing                     |colorscheme-installer.nvim-contributing|
 
-
-
 ------------------------------------------------------------------------------
 
 INSTALLATION                         *colorscheme-installer.nvim-installation*
