@@ -2,7 +2,8 @@
 
 Welcome, everyone and thank you for wanting to contribute to this project.
 
-This project uses [selene](https://github.com/Kampfkarren/selene) as the linter,
+This project uses [selene](https://github.com/Kampfkarren/selene) and
+[luacheck](https://github.com/mpeterv/luacheck) as the linters,
 [stylua](https://github.com/JohnnyMorganz/StyLua) as the formatter and
 [plenary.nvim](https://github.com/nvim-lua/plenary.nvim) as the test runner.
 
@@ -31,21 +32,55 @@ This project uses [selene](https://github.com/Kampfkarren/selene) as the linter,
    - **Make your changes**: Implement your changes on your local machine. Make sure
      to follow the project standards (linting and formatting rules).
 
-   > [!note]
-   > You can use `make lint` and `make test` to check if your changes are correct
+> [!note]
+> You can use `make lint` and `make test` to check if your changes are correct
 
 3. **Send your changes**
 
-   - **Commit your changes**: Once you are satisfied with your changes, commit them
-     with a descriptive and concise message. Following the standards is recommended,
-     [conventional commit messages](https://www.conventionalcommits.org/en/v1.0.0).
+- **Commit your changes**: Once you are satisfied with your changes, commit them
+  with a descriptive and concise message. Following the standards like in the
+  [Neovim repo](https://github.com/neovim/neovim/blob/master/CONTRIBUTING.md#commit-messages),
+  [conventional commit guidelines](https://www.conventionalcommits.org/en/v1.0.0).
 
-   - **Push to your fork**: Push your changes to your fork using
-     `git push origin <branch-name>`.
+```COMMITMSG
+type(scope): subject
 
-   - **Create a Pull Request (PR)**: Once you pushed your changes, make a pull request
-     so we can see the changes and discuss over it if necessary. A clear description
-     of the changes is allways welcomed.
+Problem:
+...
+
+Solution:
+...
+```
+
+> [!note]
+> Some of the types are: `build ci docs feat fix perf refactor revert test`
+>
+> You can leave the **body** blank, but it is nice if a complex change occurs,
+> you do provide a concise **body**.
+
+```COMMITMSG
+Problem:
+...
+
+Solution:
+...
+```
+
+> [!warning]
+> To indicate **BREAKING CHANGES**:
+
+```COMMITMSG
+refactor(installation)!: drop support for nvim-0.8
+
+BREAKING CHANGE: refactor to use neovim's API supported only in v0.9 or higher
+```
+
+- **Push to your fork**: Push your changes to your fork using
+  `git push origin <branch-name>`.
+
+- **Create a Pull Request (PR)**: Once you pushed your changes, make a pull request
+  so we can see the changes and discuss over it if necessary. A clear description
+  of the changes is allways welcomed.
 
 ## Good practices
 
@@ -58,4 +93,5 @@ This project uses [selene](https://github.com/Kampfkarren/selene) as the linter,
 
 - **Follow the code style**: Try to match the code style as much as possible. Follow
   lint and format rules. For `md` files, [markdownlint](https://github.com/markdownlint/markdownlint);
-  for `lua` files, [selene](https://github.com/Kampfkarren/selene) and [stylua](https://github.com/JohnnyMorganz/StyLua)
+  for `lua` files, [selene](https://github.com/Kampfkarren/selene) and
+  [luacheck](https://github.com/mpeterv/luacheck) and [stylua](https://github.com/JohnnyMorganz/StyLua)
