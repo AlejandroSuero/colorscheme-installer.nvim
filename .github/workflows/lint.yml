@@ -1,14 +1,10 @@
 name: lint
 
-on:
-  push:
-  pull_request:
-    branches:
-      - main
+on: ["push", "pull_request"]
 
 jobs:
   lint:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4
@@ -25,7 +21,7 @@ jobs:
           args: --display-style=quiet .
 
   style-lint:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4

@@ -8,7 +8,7 @@ on:
 jobs:
   test:
     name: Run Test
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         nvim-versions: ["stable", "nightly"]
