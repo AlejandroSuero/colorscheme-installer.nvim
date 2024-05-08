@@ -1,15 +1,16 @@
 TESTS_INIT=tests/minimal_init.lua
-TESTS_DIR=tests/
+TESTS_DIR=tests
 
 .PHONY: test lint
 
 test:
-		@nvim \
-		--headless \
-		--noplugin \
-		-u ${TESTS_INIT} \
-		-c "PlenaryBustedDirectory ${TESTS_DIR} { minimal_init = '${TESTS_INIT}', sequential = true }"
+		@printf "\nRunning tests\n"
+		nvim --headless --noplugin -u ${TESTS_INIT} -c "PlenaryBustedDirectory ${TESTS_DIR} { minimal_init = '${TESTS_INIT}', sequential = true }"
 
 lint:
-	@selene lua/colorscheme-installer tests
-	@stylua --color always --check lua/colorscheme-installer tests
+	@printf "\nRunning luacheck\n"
+	luacheck lua/* tests/*
+	@printf "\nRunning selene\n"
+	selene --display-style=quiet .
+	@printf "\nRunning stylua\n"
+	stylua --color always --check .
