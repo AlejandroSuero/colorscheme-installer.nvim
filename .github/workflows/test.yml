@@ -1,7 +1,6 @@
 name: test
 
 on:
-  push:
   pull_request:
     branches:
       - main
@@ -9,10 +8,9 @@ on:
 jobs:
   test:
     name: Run Test
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-22.04
     strategy:
       matrix:
-        os: [ubuntu-22.04, macos-latest]
         nvim-versions: ["stable", "nightly"]
     steps:
       - uses: actions/checkout@v4
