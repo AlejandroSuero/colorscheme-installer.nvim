@@ -1,29 +1,15 @@
-<a name="readme-top"></a>
-
 <div align="center">
 
-<a href="https://github.com/AlejandroSuero/colorscheme-installer.nvim/actions/workflows/default.yml">
-    <img
-        alt="CI status badge"
-        align="center"
-        src="https://github.com/AlejandroSuero/colorscheme-installer.nvim/actions/workflows/default.yml/badge.svg"
-    />
-</a>
-<a href="https://github.com/AlejandroSuero/colorscheme-installer.nvim/issues">
-    <img
-        align="center" src="https://img.shields.io/github/issues/alejandrosuero/colorscheme-installer.nvim"
-        alt="issues badge"
-        title="Issues"
-    />
-</a>
+[![Test status badge](https://github.com/AlejandroSuero/colorscheme-installer.nvim/actions/workflows/test.yml/badge.svg)](https://github.com/AlejandroSuero/colorscheme-installer.nvim/actions/workflows/test.yml)
+[![Issues badge](https://img.shields.io/github/issues/alejandrosuero/colorscheme-installer.nvim)](https://github.com/AlejandroSuero/colorscheme-installer.nvim/issues)
 
 # NeoVim colorscheme installer
 
 Install colorschemes into your [NeoVim](https://neovim.io) configuration from
 itself.
 
-[Report an issue](https://github.com/AlejandroSuero/colorscheme-installer.nvim/issues)
-· [Suggest a feature](https://github.com/AlejandroSuero/colorscheme-installer.nvim/issues)
+[Report an issue](https://github.com/AlejandroSuero/colorscheme-installer.nvim/issues/new?assignees=&labels=bug&projects=&template=bug_report.yml&title=%5BBug%5D%3A+)
+· [Suggest a feature](https://github.com/AlejandroSuero/colorscheme-installer.nvim/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md&title=%5BFeat%5D%3A+)
 
 </div>
 

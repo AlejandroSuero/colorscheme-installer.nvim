@@ -4,8 +4,8 @@ TESTS_DIR=tests
 .PHONY: test lint
 
 test:
-		@printf "\nRunning tests\n"
-		nvim --headless --noplugin -u ${TESTS_INIT} -c "PlenaryBustedDirectory ${TESTS_DIR} { minimal_init = '${TESTS_INIT}', sequential = true }"
+	@printf "\nRunning tests with 'vusted'\n"
+	vusted ./tests
 
 lint:
 	@printf "\nRunning luacheck\n"

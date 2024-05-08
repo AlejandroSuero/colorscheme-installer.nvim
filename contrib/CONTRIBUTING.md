@@ -2,10 +2,19 @@
 
 Welcome, everyone and thank you for wanting to contribute to this project.
 
+## Dependencies
+
 This project uses [selene](https://github.com/Kampfkarren/selene) and
 [luacheck](https://github.com/mpeterv/luacheck) as the linters,
 [stylua](https://github.com/JohnnyMorganz/StyLua) as the formatter and
-[plenary.nvim](https://github.com/nvim-lua/plenary.nvim) as the test runner.
+[vusted](https://github.com/notomo/vusted) as the test runner.
+
+```bash
+cargo install selene
+cargo install stylua
+luarocks --lua-version=5.1 install luacheck
+luarocks --lua-version=5.1 install vusted
+```
 
 ## How to contribute
 

@@ -1,9 +1,7 @@
-require("plenary.reload").reload_module("colorscheme-installer", true)
-
-local assert = require("luassert")
 local csi = require("colorscheme-installer")
 
-local eq = assert.are.same
+local same = assert.are.same
+local not_true = assert.is_not_true
 
 ---Require the colorscheme config
 ---@param colorscheme string
@@ -19,7 +17,7 @@ describe("setup", function()
       colorschemes_path = os.getenv("HOME") .. "/.config/nvim/lua/colorschemes",
     }
     csi.setup()
-    eq(csi.config, expected)
+    same(csi.config, expected)
   end)
 
   it("setup with custom configs", function()
@@ -27,7 +25,7 @@ describe("setup", function()
       colorschemes_path = os.getenv("HOME") .. "/.config/nvim/lua/custom/plugins/colorschemes",
     }
     csi.setup(expected)
-    eq(csi.config, expected)
+    same(csi.config, expected)
   end)
 end)
 
@@ -41,7 +39,7 @@ describe("colorschemes", function()
 
     for _, config in ipairs(csi._cs_configs) do
       if config.name == "kanagawa" then
-        eq(config.default_config, expected)
+        same(config.default_config, expected)
       end
     end
   end)
@@ -49,7 +47,7 @@ describe("colorschemes", function()
   it("has `kanagawa` uninstalled", function()
     for _, config in ipairs(csi._cs_configs) do
       if config.name == "kanagawa" then
-        eq(config.installed, false)
+        not_true(config.installed)
       end
     end
   end)
